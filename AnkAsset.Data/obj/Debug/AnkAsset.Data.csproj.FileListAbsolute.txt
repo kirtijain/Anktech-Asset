@@ -1,0 +1,10 @@
+D:\projects\AnkAsset\AnkAsset\AnkAsset.Data\bin\Debug\AnkAsset.Data.dll
+D:\projects\AnkAsset\AnkAsset\AnkAsset.Data\bin\Debug\AnkAsset.Data.pdb
+D:\projects\AnkAsset\AnkAsset\AnkAsset.Data\obj\Debug\AnkAsset.Data.dll
+D:\projects\AnkAsset\AnkAsset\AnkAsset.Data\obj\Debug\AnkAsset.Data.pdb
+D:\projects\AnkAsset\AnkAsset\AnkAsset.Data\obj\Debug\AnkAsset.Data.csprojResolveAssemblyReference.cache
+D:\BackupSqlKirti\projects\AnkAsset\AnkAsset\AnkAsset.Data\bin\Debug\AnkAsset.Data.dll
+D:\BackupSqlKirti\projects\AnkAsset\AnkAsset\AnkAsset.Data\bin\Debug\AnkAsset.Data.pdb
+D:\BackupSqlKirti\projects\AnkAsset\AnkAsset\AnkAsset.Data\obj\Debug\AnkAsset.Data.dll
+D:\BackupSqlKirti\projects\AnkAsset\AnkAsset\AnkAsset.Data\obj\Debug\AnkAsset.Data.pdb
+D:\BackupSqlKirti\projects\AnkAsset\AnkAsset\AnkAsset.Data\obj\Debug\AnkAsset.Data.csprojResolveAssemblyReference.cache

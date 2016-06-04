@@ -1,0 +1,196 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="AnkAsset.Web.SiteMaster" %>
+
+<!DOCTYPE html>
+<html lang="en">
+<head runat="server">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+<title>Asset Management</title>
+		
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <link href="Content/css/bootstrap.min.css" rel="stylesheet" />
+	
+	<link href="Content/css/style.css" rel="stylesheet">
+     
+   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+	</head>
+
+	<body>
+    <form runat="server">
+         <asp:ScriptManager runat="server"></asp:ScriptManager>
+<header class="navbar navbar-default navbar-static-top top-navbar" role="banner">
+
+ <div class="container">
+   
+ <div class="col-md-6">
+   
+   <h1 class="page-title">AnkTech Asset Management System</h1>
+ 
+   </div>
+    <div class="col-md-6">
+        <div class="navbar-header">
+  
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+   
+       <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+     
+     <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+
+     </button>
+        </div>
+        <nav class="collapse navbar-collapse" role="navigation">
+  
+          <ul class="nav navbar-nav pull-right">
+             
+              <asp:LoginView runat="server" ID="headloginview" ViewStateMode="Disabled">
+                        <AnonymousTemplate>
+                            <%--<ul class="nav navbar-nav pull-right">
+                                <li><a runat="server" href="~/Account/Register">Register</a></li>
+                                <li><a runat="server" href="~/Account/Login">Log in</a></li>
+                            </ul>--%>
+                        </AnonymousTemplate>
+                        <LoggedInTemplate>
+                            <ul class="nav navbar-nav pull-right">
+                                 <li>
+                                     <asp:HyperLink ID="userlink" runat="server" ></asp:HyperLink>
+                                 </li>
+                                <li>
+                                    <asp:LoginStatus runat="server" LogoutAction="Redirect" LogoutText="Logout" LogoutPageUrl="~/Login.aspx" OnLoggingOut="Unnamed_LoggingOut" />
+                                </li>
+                            </ul>
+                        </LoggedInTemplate>
+                    </asp:LoginView>
+            </ul>
+        </nav>
+    </div>
+  </div>
+</header>
+<!-- Begin Body -->
+<div class="container">
+    
+	<div class="row">
+  			<div class="col-md-3 left-sidebar">
+              	<ul class="nav nav-stacked single-bar">
+                    <li><h3>Asset Management</h3></li>
+                      <li><a href="EmployeesList.aspx">Employees</a></li>
+                    <li><a href="ViewAsset.aspx">Assets</a></li>
+                     <li><a href="ViewAssetParts.aspx">Asset Parts</a></li>
+                  <li><a href="ViewConfiguration.aspx">Asset Configuration</a></li>
+                       <li><a href="ViewAllotment.aspx">Asset Allotment</a></li>
+                       <li><a href="EmployeeAllotmentList.aspx">Employee Allotment</a></li>
+                       <li><a href="VendorList.aspx"> Vendor Detail</a></li>
+</ul>
+                <ul class="nav nav-stacked single-bar">
+          
+          <li><h3>Help Desk</h3></li>
+             
+  <li><a href="AssetMaintainance.aspx">Asset Maintenance</a></li>
+                  
+  <li><a href="ViewMaintenance.aspx">Maintenance Detail</a></li>
+   <li><a href="ViewSpare.aspx">Spare Parts</a></li>
+   <li><a href="ViewFaulty.aspx">Faulty Parts</a></li>
+           
+     </ul>
+ <ul class="nav nav-stacked single-bar">
+    
+                <li><h3>Settings</h3></li>
+            <li><a href="ChangePassword.aspx">Change password</a></li>
+      <li><a href="UsersList.aspx">Users list</a></li>
+   </ul>
+    		</div>  
+  <div class="col-md-9 right-content-section">
+          
+<%--<html lang="en">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%: Page.Title %> - My ASP.NET Application</title>
+
+    <asp:PlaceHolder runat="server">
+        <%: Scripts.Render("~/bundles/modernizr") %>
+    </asp:PlaceHolder>
+    <webopt:bundlereference runat="server" path="~/Content/css" />
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+
+</head>
+<body>
+    <form runat="server">
+        <asp:ScriptManager runat="server">
+            <Scripts>
+               
+                <asp:ScriptReference Name="MsAjaxBundle" />
+                <asp:ScriptReference Name="jquery" />
+                <asp:ScriptReference Name="bootstrap" />
+                <asp:ScriptReference Name="respond" />
+                <asp:ScriptReference Name="WebForms.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebForms.js" />
+                <asp:ScriptReference Name="WebUIValidation.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebUIValidation.js" />
+                <asp:ScriptReference Name="MenuStandards.js" Assembly="System.Web" Path="~/Scripts/WebForms/MenuStandards.js" />
+                <asp:ScriptReference Name="GridView.js" Assembly="System.Web" Path="~/Scripts/WebForms/GridView.js" />
+                <asp:ScriptReference Name="DetailsView.js" Assembly="System.Web" Path="~/Scripts/WebForms/DetailsView.js" />
+                <asp:ScriptReference Name="TreeView.js" Assembly="System.Web" Path="~/Scripts/WebForms/TreeView.js" />
+                <asp:ScriptReference Name="WebParts.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebParts.js" />
+                <asp:ScriptReference Name="Focus.js" Assembly="System.Web" Path="~/Scripts/WebForms/Focus.js" />
+                <asp:ScriptReference Name="WebFormsBundle" />
+               
+            </Scripts>
+        </asp:ScriptManager>
+
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" runat="server" href="~/">AnkTech Asset Management System</a>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a runat="server" href="~/">Home</a></li>
+                        <li><a runat="server" href="~/About">About</a></li>
+                        <li><a runat="server" href="~/Contact">Contact</a></li>
+                    </ul>
+                    <asp:LoginView runat="server" ViewStateMode="Disabled">
+                        <AnonymousTemplate>
+                            <ul class="nav navbar-nav navbar-right">
+                                <li><a runat="server" href="~/Account/Register">Register</a></li>
+                                <li><a runat="server" href="~/Account/Login">Log in</a></li>
+                            </ul>
+                        </AnonymousTemplate>
+                        <LoggedInTemplate>
+                            <ul class="nav navbar-nav navbar-right">
+                                <li><a runat="server" href="~/Account/Manage" title="Manage your account">Hello, <%: Context.User.Identity.GetUserName()  %> !</a></li>
+                                <li>
+                                    <asp:LoginStatus runat="server" LogoutAction="Redirect" LogoutText="Log off" LogoutPageUrl="~/" OnLoggingOut="Unnamed_LoggingOut" />
+                                </li>
+                            </ul>
+                        </LoggedInTemplate>
+                    </asp:LoginView>
+                </div>
+            </div>
+        </div>
+        <div class="container body-content">--%>
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">            
+            </asp:ContentPlaceHolder>
+
+         </div>  
+  	</div>
+     <footer>
+                <p>Managed By AnkTech Softwares Pvt.Ltd.</p>
+            </footer>
+</div>
+<!-- script references -->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+	
+	<script src="js/bootstrap.min.js"></script>
+		
+<script src="js/scripts.js"></script>
+</form>
+	</body>
+</html>
+
+

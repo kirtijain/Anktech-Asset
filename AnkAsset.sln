@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30110.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnkAsset.Core", "AnkAsset.Core\AnkAsset.Core.csproj", "{D3073A58-3232-44D4-B96D-71D042BC722C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnkAsset.Data", "AnkAsset.Data\AnkAsset.Data.csproj", "{3406A018-0C6F-4768-A69D-513AE86BD7C9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnkAsset.Web", "AnkAsset.Web\AnkAsset.Web.csproj", "{A3EF1D1E-3060-4B10-8F75-F2F13B2F6DF8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D3073A58-3232-44D4-B96D-71D042BC722C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3073A58-3232-44D4-B96D-71D042BC722C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3073A58-3232-44D4-B96D-71D042BC722C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3073A58-3232-44D4-B96D-71D042BC722C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3406A018-0C6F-4768-A69D-513AE86BD7C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3406A018-0C6F-4768-A69D-513AE86BD7C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3406A018-0C6F-4768-A69D-513AE86BD7C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3406A018-0C6F-4768-A69D-513AE86BD7C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3EF1D1E-3060-4B10-8F75-F2F13B2F6DF8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3EF1D1E-3060-4B10-8F75-F2F13B2F6DF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3EF1D1E-3060-4B10-8F75-F2F13B2F6DF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3EF1D1E-3060-4B10-8F75-F2F13B2F6DF8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

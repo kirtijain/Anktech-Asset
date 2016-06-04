@@ -1,0 +1,14 @@
+D:\projects\AnkAsset\AnkAsset\AnkAsset.Core\bin\Debug\AnkAsset.Core.dll
+D:\projects\AnkAsset\AnkAsset\AnkAsset.Core\bin\Debug\AnkAsset.Core.pdb
+D:\projects\AnkAsset\AnkAsset\AnkAsset.Core\bin\Debug\AnkAsset.Data.dll
+D:\projects\AnkAsset\AnkAsset\AnkAsset.Core\bin\Debug\AnkAsset.Data.pdb
+D:\projects\AnkAsset\AnkAsset\AnkAsset.Core\obj\Debug\AnkAsset.Core.csprojResolveAssemblyReference.cache
+D:\projects\AnkAsset\AnkAsset\AnkAsset.Core\obj\Debug\AnkAsset.Core.dll
+D:\projects\AnkAsset\AnkAsset\AnkAsset.Core\obj\Debug\AnkAsset.Core.pdb
+D:\BackupSqlKirti\projects\AnkAsset\AnkAsset\AnkAsset.Core\bin\Debug\AnkAsset.Core.dll
+D:\BackupSqlKirti\projects\AnkAsset\AnkAsset\AnkAsset.Core\bin\Debug\AnkAsset.Core.pdb
+D:\BackupSqlKirti\projects\AnkAsset\AnkAsset\AnkAsset.Core\bin\Debug\AnkAsset.Data.dll
+D:\BackupSqlKirti\projects\AnkAsset\AnkAsset\AnkAsset.Core\bin\Debug\AnkAsset.Data.pdb
+D:\BackupSqlKirti\projects\AnkAsset\AnkAsset\AnkAsset.Core\obj\Debug\AnkAsset.Core.csprojResolveAssemblyReference.cache
+D:\BackupSqlKirti\projects\AnkAsset\AnkAsset\AnkAsset.Core\obj\Debug\AnkAsset.Core.dll
+D:\BackupSqlKirti\projects\AnkAsset\AnkAsset\AnkAsset.Core\obj\Debug\AnkAsset.Core.pdb
